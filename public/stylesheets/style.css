@@ -56,3 +56,28 @@ fieldset {
   border:0;
   padding:0; margin:0;
 }
+fieldset legend {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+fieldset div {
+  margin: 6px 24px;
+}
+fieldset p {
+  display: inline-block;
+  margin: 0;
+  width: 128px;
+}
+fieldset input {
+  display: inline-block;
+  margin: 0;
+}
+fieldset button {
+  width: 128px;
+}
+/*#deleteUser {*/
+  /*width:250px;*/
+  /*position:absolute;*/
+  /*top:160px;*/
+  /*left:0;*/
+/*}*/

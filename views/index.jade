@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to our test
+  p Welcome to our Node.js / Express / Ajax / Mongo DB Test Project
 
   // Wrapper
   #wrapper
@@ -36,19 +36,38 @@ block content
     // /USER LIST
 
     // ADD USER
-    h2 Add User
+    h2 Add User to DB
     #addUser
+        form
         fieldset
-            input#inputUserName(type='text', placeholder='Username')
-            input#inputUserEmail(type='text', placeholder='Email')
-            br
-            input#inputUserFullname(type='text', placeholder='Full Name')
-            input#inputUserAge(type='text', placeholder='Age')
-            br
-            input#inputUserLocation(type='text', placeholder='Location')
-            input#inputUserGender(type='text', placeholder='gender')
-            br
-            button#btnAddUser Add User
+            legend User Information
+            div
+                p Enter User Name
+                input#inputUserName(type='text', placeholder='Username')
+            div
+                p Enter Email
+                input#inputUserEmail(type='text', placeholder='Email')
+            div
+                p Enter Name
+                input#inputUserFullname(type='text', placeholder='Full Name')
+            div
+                p Enter Age
+                input#inputUserAge(type='text', placeholder='Age')
+            div
+                p Enter City
+                input#inputUserLocation(type='text', placeholder='Location')
+            div
+                p Enter Gender
+                input#inputUserGender(type='text', placeholder='Gender')
+            div
+                button#btnAddUser Add User
     // /ADD USER
-
+    // DELETE USER Confirmation
+    //#deleteUser
+    //    h2 Confirm Deletion
+    //    p
+    //        strong Name:
+    //        |  <span id='deleteName'></span>
+    //    div
+    //        button#btnDeleteUser Delete Name Listed
   // /WRAPPER
